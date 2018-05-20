@@ -1,7 +1,5 @@
 package com.indrapedia.cleanarchitecture.topmovies;
 
-
-
 import com.indrapedia.cleanarchitecture.http.MoreInfoApiService;
 import com.indrapedia.cleanarchitecture.http.MovieApiService;
 import com.indrapedia.cleanarchitecture.http.apimodel.Result;
@@ -101,7 +99,7 @@ public class TopMoviesRepository implements Repository {
 
     @Override
     public Observable<String> getCountryData() {
-       return getCountriesFromMemory().switchIfEmpty(getCountriesFromNetwork());
+        return getCountriesFromMemory().switchIfEmpty(getCountriesFromNetwork());
     }
 
     @Override
