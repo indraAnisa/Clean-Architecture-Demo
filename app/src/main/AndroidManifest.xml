@@ -11,7 +11,7 @@
         android:name=".root.App"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".topmovies.TopMoviesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
